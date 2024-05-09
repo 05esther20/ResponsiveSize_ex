@@ -14,10 +14,13 @@
         <li>다중리스트 처리하기5</li>
     </ul>
     <script>
-        const menulist = ['네이버','다음','구글','아마존','카카오'];
+        const menulist = ['민지','해린','다니엘','하니','혜인'];
         document.querySelectorAll("ul li").forEach(function(el, idx){
             el.innerHTML = menulist[idx]; 
-                      // console.log("e",e,"i",i)
+            // console.log("e",e,"i",i);
+            el.addEventListener('mouseenter',function(){
+                alert(idx);
+            })    
         })
     </script>
 </body>
